@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人生の余白を、最高の健康で満たす。大人世代のためのパーソナルジム</title>
+    <meta name="description" content="無理のない習慣化、睡眠改善、疲労回復ケア。60代からの「一生モノの健康習慣」をサポートする、プレミアムなパーソナルジム。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gym: {
+                            navy: '#1a2c4e',
+                            gold: '#c5a059',
+                            beige: '#fdfbf7',
+                            green: '#4a6741',
+                            dark: '#111827',
+                            muted: '#71717a'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', '"Noto Serif JP"', 'serif'],
+                        sans: ['Inter', '"Noto Sans JP"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-zoom {
+            animation: zoom-out 20s infinite alternate;
+        }
+        @keyframes zoom-out {
+            from { transform: scale(1.1); }
+            to { transform: scale(1); }
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: #fdfbf7;
+            color: #1a2c4e;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-500 px-4 py-4 md:px-12 md:py-6 text-white" id="navbar">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-serif text-xl md:text-2xl font-semibold tracking-widest uppercase" id="nav-logo">
+                Aeterne <span class="text-gym-gold text-xs md:text-sm align-top">Gym</span>
+            </div>
+            <div class="flex items-center space-x-4 md:space-x-8">
+                <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest items-center" id="nav-links">
+                    <a href="#problems" class="hover:text-gym-gold transition-colors">悩み</a>
+                    <a href="#features" class="hover:text-gym-gold transition-colors">特徴</a>
+                    <a href="#pricing" class="hover:text-gym-gold transition-colors">プラン</a>
+                </div>
+                <a href="#cta" id="nav-cta" class="bg-gym-gold text-white px-4 py-2 md:px-5 md:py-2 text-sm font-bold rounded-full hover:bg-gym-navy transition-all duration-300 shadow-lg whitespace-nowrap">
+                    無料相談へ
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/hero_v2.png" alt="Luxury Wellness Gym Interior" class="w-full h-full object-cover hero-zoom">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
+            <div class="max-w-3xl drop-shadow-2xl" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="text-white font-serif text-4xl md:text-7xl leading-tight mb-12 md:mb-16 drop-shadow-2xl font-bold">
+                    人生の余白を、<br>
+                    <span class="italic text-gym-beige drop-shadow-2xl">最高の健康</span>で満たす。
+                </h1>
+                <p class="text-white text-lg md:text-2xl font-medium mb-16 md:mb-20 tracking-wide leading-relaxed max-w-2xl border-l-4 border-gym-gold pl-6 drop-shadow-xl text-opacity-90">
+                    大人世代のための「続く」パーソナルジム。<br>
+                    無理なく、優雅に、一生モノの習慣を。
+                </p>
+                <div class="flex flex-col items-start w-full md:w-auto">
+                    <a href="#cta" class="inline-flex w-full sm:w-auto bg-gym-gold text-white px-6 md:px-12 py-4 md:py-6 rounded-full text-base md:text-xl font-bold shadow-2xl hover:bg-gym-navy transition-all duration-500 hover:scale-105 active:scale-95 flex-col items-center justify-center mb-3">
+                        <span>まずは無料相談を予約する</span>
+                        <span class="text-sm md:text-base font-normal mt-1">（1分で完了）</span>
+                    </a>
+                    <p class="text-white text-opacity-60 text-[10px] md:text-xs drop-shadow-md pl-4 border-l-2 border-gym-gold font-medium tracking-wider">※無理な勧誘は一切ございません</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white space-y-2 opacity-80">
+            <span class="text-[10px] uppercase tracking-[0.4em]">Scroll</span>
+            <div class="w-[1px] h-12 bg-white bg-opacity-30 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full bg-gym-gold animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section id="problems" class="py-24 md:py-32 bg-gym-beige overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="font-serif text-3xl md:text-5xl leading-snug mb-8">
+                        いつまでも<br>
+                        自分らしく、<span class="text-gym-gold">美しく。</span>
+                    </h2>
+                    <p class="text-gym-muted text-lg mb-12 leading-relaxed">
+                        年齢を重ねるごとに、日々の活動や健康への不安は増えていくものです。<br>
+                        しかし、本当に必要なのは「激しい運動」ではなく、「心地よく続く習慣」です。
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 gap-6 shadow-xl rounded-2xl" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border-l-8 border-gym-gold flex items-center space-x-6 transform transition hover:-translate-y-1">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-gym-navy rounded-full flex items-center justify-center flex-shrink-0 shadow-inner">
+                            <i data-lucide="battery-low" class="text-gym-gold w-7 h-7 md:w-8 md:h-8"></i>
+                        </div>
+                        <p class="text-lg md:text-xl text-gym-navy font-bold leading-relaxed">「体力が落ちて、疲れやすくなった」</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border-l-8 border-gym-gold flex items-center space-x-6 transform transition hover:-translate-y-1">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-gym-navy rounded-full flex items-center justify-center flex-shrink-0 shadow-inner">
+                            <i data-lucide="refresh-ccw" class="text-gym-gold w-7 h-7 md:w-8 md:h-8"></i>
+                        </div>
+                        <p class="text-lg md:text-xl text-gym-navy font-bold leading-relaxed">「色々な健康法を試したが、続かない」</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border-l-8 border-gym-gold flex items-center space-x-6 transform transition hover:-translate-y-1">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-gym-navy rounded-full flex items-center justify-center flex-shrink-0 shadow-inner">
+                            <i data-lucide="alert-triangle" class="text-gym-gold w-7 h-7 md:w-8 md:h-8"></i>
+                        </div>
+                        <p class="text-lg md:text-xl text-gym-navy font-bold leading-relaxed">「激しい運動は怪我が怖くて踏み出せない」</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 md:py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-24" data-aos="fade-up">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-3 mb-8 md:mb-12">
+                    <div class="inline-flex items-center bg-gym-gold text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md">
+                        <i data-lucide="crown" class="w-4 h-4 mr-2 text-white"></i>
+                        顧客満足度 <span class="text-lg ml-1">98<span class="text-xs">%</span></span>
+                    </div>
+                    <div class="inline-flex items-center bg-white text-gym-navy px-5 py-2.5 rounded-full text-sm font-bold shadow-md border border-gray-100">
+                        <i data-lucide="medal" class="w-4 h-4 mr-2 text-gym-gold"></i>
+                        一生モノの健康習慣をあなたに
+                    </div>
+                </div>
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Our Approach</span>
+                <h2 class="font-serif text-4xl md:text-6xl text-gym-navy font-bold">当ジムが選ばれる理由</h2>
+                <div class="w-24 h-[1px] bg-gym-gold mx-auto mt-8"></div>
+            </div>
+
+            <div class="space-y-24 md:space-y-32">
+                <!-- Feature 1 (Left Image, Right Text) -->
+                <div class="flex flex-col md:flex-row items-center md:items-stretch space-y-8 md:space-y-0 group">
+                    <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-2xl h-80 md:h-auto min-h-[400px]" data-aos="fade-right">
+                        <img src="assets/senior.png" alt="Habit Formation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="md:w-1/2 md:pl-16 flex flex-col justify-center text-center md:text-left" data-aos="fade-left" data-aos-delay="200">
+                        <span class="text-gym-gold font-serif text-5xl mb-6 block italic">01</span>
+                        <h3 class="text-3xl font-bold mb-6 text-gym-navy">認知心理学に基づいた<br>「習慣化インストラクト」</h3>
+                        <p class="text-gym-muted text-lg leading-relaxed">
+                            「意志の力」に頼らず、ライフスタイルの中に自然に運動が溶け込む仕組みをご提案。頑張らなくても続けられる、一生モノのメソッドです。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 (Right Image, Left Text) -->
+                <div class="flex flex-col md:flex-row-reverse items-center md:items-stretch space-y-8 md:space-y-0 group">
+                    <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-2xl h-80 md:h-auto min-h-[400px]" data-aos="fade-left">
+                        <img src="assets/sleep.png" alt="Deep Sleep" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="md:w-1/2 md:pr-16 flex flex-col justify-center text-center md:text-right" data-aos="fade-right" data-aos-delay="200">
+                        <span class="text-gym-gold font-serif text-5xl mb-6 block italic">02</span>
+                        <h3 class="text-3xl font-bold mb-6 text-gym-navy">「睡眠インストラクト」で<br>細胞から若々しく</h3>
+                        <p class="text-gym-muted text-lg leading-relaxed">
+                            良質な睡眠は、どんなサプリよりも強力なエイジングケア。深部体温と自律神経を整え、翌朝の目覚めが劇的に変わる習慣を導きます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 (Left Image, Right Text) -->
+                <div class="flex flex-col md:flex-row items-center md:items-stretch space-y-8 md:space-y-0 group">
+                    <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-2xl h-80 md:h-auto min-h-[400px]" data-aos="fade-right">
+                        <img src="assets/care.png" alt="Body Care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="md:w-1/2 md:pl-16 flex flex-col justify-center text-center md:text-left" data-aos="fade-left" data-aos-delay="200">
+                        <span class="text-gym-gold font-serif text-5xl mb-6 block italic">03</span>
+                        <h3 class="text-3xl font-bold mb-6 text-gym-navy">疲れを残さない<br>「疲労回復ボディケア」</h3>
+                        <p class="text-gym-muted text-lg leading-relaxed">
+                            トレーニングの締めくくりは、プロによる極上のボディケア。緊張した筋膜をリリースし、巡りを整えることで「心地よい達成感」へと変えます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 (Right Image, Left Text) -->
+                <div class="flex flex-col md:flex-row-reverse items-center md:items-stretch space-y-8 md:space-y-0 group">
+                    <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-2xl h-80 md:h-auto min-h-[400px]" data-aos="fade-left">
+                        <img src="assets/consulting.png" alt="Personal Consulting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="md:w-1/2 md:pr-16 flex flex-col justify-center text-center md:text-right" data-aos="fade-right" data-aos-delay="200">
+                        <span class="text-gym-gold font-serif text-5xl mb-6 block italic">04</span>
+                        <h3 class="text-3xl font-bold mb-6 text-gym-navy">完全オーダーメイドの<br>専属パーソナルサポート</h3>
+                        <p class="text-gym-muted text-lg leading-relaxed">
+                            一人のトレーナーがあなたを徹底サポート。体調、柔軟性、目標に合わせ、その日のメニューを最適化。究極の安心感をご提供します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habit Roadmap Section -->
+    <section id="roadmap" class="py-24 md:py-32 bg-gym-beige relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Habit Roadmap</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-gym-navy font-bold leading-snug">2ヶ月で変わる、<br>無理のない習慣化プロセス</h2>
+                <div class="w-24 h-[1px] bg-gym-gold mx-auto mt-8"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Desktop Connector Line -->
+                <div class="hidden md:block absolute top-10 left-0 w-full h-1 bg-gym-gold opacity-30 z-0"></div>
+                <!-- Step 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl relative z-10 text-center transform transition duration-500 hover:-translate-y-2 border-t-8 border-gym-gold" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-16 h-16 bg-gym-navy rounded-full text-gym-gold flex items-center justify-center mx-auto mb-6 shadow-inner text-2xl font-serif italic font-bold">1</div>
+                    <div class="text-gym-navy font-bold text-xl mb-4 border-b border-gym-gold pb-2 inline-block">1〜2週目: 基礎構築</div>
+                    <p class="text-gym-muted leading-relaxed">まずは「ジムに通うこと」自体を心地よい習慣へ。初めは無理のない軽めのメニューと丁寧な極上ボディケアで心身をほぐします。</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl relative z-10 text-center transform transition duration-500 hover:-translate-y-2 border-t-8 border-gym-gold" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gym-navy rounded-full text-gym-gold flex items-center justify-center mx-auto mb-6 shadow-inner text-2xl font-serif italic font-bold">2</div>
+                    <div class="text-gym-navy font-bold text-xl mb-4 border-b border-gym-gold pb-2 inline-block">3〜5週目: 変化の実感</div>
+                    <p class="text-gym-muted leading-relaxed">睡眠の質の向上や目覚めの良さなど、日常での嬉しい変化が現れ始めます。体を動かすことが「楽しみ」に変わる重要なステップです。</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-gym-navy rounded-2xl p-8 shadow-2xl relative z-10 text-center transform transition duration-500 hover:-translate-y-2 border-t-8 border-gym-gold scale-105" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-gym-gold rounded-full text-white flex items-center justify-center mx-auto mb-6 shadow-xl text-2xl font-serif italic font-bold">3</div>
+                    <div class="text-gym-beige font-bold text-xl mb-4 border-b text-gym-gold pb-2 inline-block border-gym-gold">6〜8週目: 自律した習慣化</div>
+                    <p class="text-gym-beige text-opacity-80 leading-relaxed">「体を動かさないと気持ち悪い」と感じる状態へ到達。トレーナーがいなくても自立して健康を維持できる、一生モノの基礎が完成します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="py-24 md:py-32 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Proven Results</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-gym-navy font-bold leading-snug mb-8">
+                        私たちが「続く」と<br>断言できる理由があります。
+                    </h2>
+                    <p class="text-gym-muted text-lg leading-relaxed mb-6">
+                        根性や一時的なモチベーションに依存しない、認知心理学に基づく独自のメソッドだからこそ、圧倒的な継続率を実現しています。
+                    </p>
+                    <p class="text-gym-muted text-lg leading-relaxed mb-8">
+                        これまで何度もダイエットやジム選びで挫折してきた方にこそ、Aeterne Gymの「頑張らないメソッド」を体感していただきたいと願っています。
+                    </p>
+                </div>
+                <div class="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+                    <!-- CSS Circle Graphic -->
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-gym-beige shadow-2xl flex flex-col items-center justify-center bg-white">
+                        <svg class="absolute inset-0 w-full h-full transform -rotate-90">
+                            <!-- Background circle -->
+                            <circle cx="50%" cy="50%" r="45%" stroke="#fdfbf7" stroke-width="8%" fill="none"></circle>
+                            <!-- Progress circle showing 98% -->
+                            <circle cx="50%" cy="50%" r="45%" stroke="#c5a059" stroke-width="8%" fill="none" stroke-dasharray="283%" stroke-dashoffset="5.66%" stroke-linecap="round"></circle>
+                        </svg>
+                        <div class="text-center z-10 relative mt-4">
+                            <span class="block text-gym-navy font-bold tracking-widest text-sm mb-2">プログラム修了後</span>
+                            <span class="block text-gym-navy font-serif font-bold text-7xl md:text-8xl mb-2 drop-shadow-md">98<span class="text-4xl md:text-5xl">%</span></span>
+                            <span class="block text-gym-gold font-bold tracking-widest text-sm bg-gym-navy text-white px-4 py-1 rounded-full inline-block">圧倒的な運動継続率</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us & Support Team Section -->
+    <section id="about" class="py-24 md:py-32 bg-gym-navy text-white relative">
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-gym-gold opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-gym-gold opacity-10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Our Team</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold leading-snug">
+                    各分野のプロフェッショナル2名が、<br>あなたを優しく二人三脚でサポートします
+                </h2>
+                <div class="w-24 h-[1px] bg-gym-gold mx-auto mt-8 mb-8"></div>
+                <p class="text-gym-beige text-opacity-90 text-lg leading-relaxed max-w-3xl mx-auto">
+                    私たちは、過酷なトレーニングは一切行いません。<br>
+                    あなた専属のパーソナルトレーナーとウェルネスサポーターが連携し、運動から睡眠・ボディケアまで、一生モノの健康づくりをお手伝いいたします。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-start mt-16 max-w-5xl mx-auto">
+                <!-- Personal Trainer -->
+                <div class="bg-white bg-opacity-5 rounded-3xl p-8 border border-white border-opacity-10 text-center transform hover:-translate-y-2 transition-transform duration-500 h-full" data-aos="fade-up" data-aos-delay="0">
+                    <div class="relative w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full overflow-hidden border-4 border-gym-gold shadow-2xl mb-8">
+                        <img src="assets/trainer.png" alt="パーソナルトレーナー" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-gym-gold font-bold tracking-widest text-sm mb-2 block">パーソナルトレーナー</span>
+                    <h3 class="font-serif text-2xl font-bold mb-4">〇〇</h3>
+                    <p class="text-gym-gold text-lg md:text-xl font-bold leading-relaxed mb-6 pb-4 border-b border-white border-opacity-20">
+                        「無理なく、しなやかに。<br>日常を軽やかにする身体づくりをサポートします」
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-2 mb-8">
+                        <span class="bg-gym-gold bg-opacity-20 text-gym-gold border border-gym-gold px-3 py-1 text-xs md:text-sm rounded-full font-bold tracking-wider">指導歴・現役歴：〇〇年</span>
+                        <span class="bg-gym-gold bg-opacity-20 text-gym-gold border border-gym-gold px-3 py-1 text-xs md:text-sm rounded-full font-bold tracking-wider">機能的動作トレーニング</span>
+                        <span class="bg-gym-gold bg-opacity-20 text-gym-gold border border-gym-gold px-3 py-1 text-xs md:text-sm rounded-full font-bold tracking-wider">身体操作指導</span>
+                    </div>
+                    <div class="text-gym-beige text-opacity-80 leading-relaxed text-base text-left space-y-4">
+                        <p>はじめまして。パーソナルトレーナーの〇〇です。</p>
+                        <p>私はこれまで、本場アメリカの大学などで長年バスケットボールのプレーヤーとして活動してきました。体格差のある海外選手の中で戦い抜くために、私が最も徹底して追求してきたのが「関節や筋肉に負担をかけない、効率的な身体の使い方」です。</p>
+                        <p>実は、このスポーツの現場で培った「身体の使い方の極意」は、シニア世代の皆様の日常にこそ大きな効果を発揮します。ただ筋肉を鍛えるのではなく、「どう動けば膝や腰に負担をかけないか」「どうすれば疲れにくい身体になるか」という機能的なアプローチで、ケガをしにくく、無理なく動ける身体へと導きます。</p>
+                        <p>トレーニングは一度で劇的に変わる魔法ではありません。だからこそ、当ジムでは「頑張りすぎない、無理のないペースで継続すること」を何より大切にしています。</p>
+                        <p>「階段の上り下りが楽になった」「毎日疲れにくくなった」「お出かけが楽しくなった」<br>身体が変わることで、日常の景色はもっと明るく前向きに変わります。あなたの人生がさらに軽やかで豊かなものになるよう、私のこれまでの経験と知識の全てを還元し、丁寧にサポートさせていただきます。</p>
+                    </div>
+                </div>
+                
+                <!-- Wellness Supporter -->
+                <div class="bg-white bg-opacity-5 rounded-3xl p-8 border border-white border-opacity-10 text-center transform hover:-translate-y-2 transition-transform duration-500 h-full" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full overflow-hidden border-4 border-gym-gold shadow-2xl mb-8">
+                        <img src="assets/supporter.png" alt="ウェルネスサポーター" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-gym-gold font-bold tracking-widest text-sm mb-2 block">ウェルネスサポーター（AETERNE GYM代表）</span>
+                    <h3 class="font-serif text-2xl font-bold mb-4">りょうが</h3>
+                    <p class="text-gym-gold text-lg md:text-xl font-bold leading-relaxed mb-6 pb-4 border-b border-white border-opacity-20">
+                        「一瞬のダイエットではなく、<br>一生続く『心と身体の健康』をお約束します」
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-2 mb-8">
+                        <span class="bg-gym-gold bg-opacity-20 text-gym-gold border border-gym-gold px-3 py-1 text-xs md:text-sm rounded-full font-bold tracking-wider">安眠インストラクター</span>
+                        <span class="bg-gym-gold bg-opacity-20 text-gym-gold border border-gym-gold px-3 py-1 text-xs md:text-sm rounded-full font-bold tracking-wider">食生活アドバイザー</span>
+                        <span class="bg-gym-gold bg-opacity-20 text-gym-gold border border-gym-gold px-3 py-1 text-xs md:text-sm rounded-full font-bold tracking-wider">認知行動心理学研究中</span>
+                    </div>
+                    <div class="text-gym-beige text-opacity-80 leading-relaxed text-base text-left space-y-4">
+                        <p>初めまして。AETERNE GYM代表のりょうがです。<br>数あるジムの中から当ジムのHPをご覧いただき、心より感謝申し上げます。</p>
+                        <p>実は私自身、過去には心身のバランスを崩し、自信を持てず、毎日を心から楽しむことができない時期がありました。そんな自分を変えるきっかけとなったのが、「トレーニング・食事・睡眠」を見直し、それを日々の『習慣』にすることでした。</p>
+                        <p>初めは手探りで、何度も挫折しそうになりました。しかし、少しずつ生活習慣を整えていくうちに、不思議と心まで軽くなり、「前向きに、楽しく生きる」という確かな実感を得ることができたのです。</p>
+                        <p>私がこのジムを立ち上げた理由は、過去の私と同じように悩んでいる方に、この「体と心が変わる深い感動」をどうしてもお伝えしたかったからです。</p>
+                        <p>当ジムは、ただ運動をして痩せるだけの場所ではありません。「睡眠インストラクター」や「食生活アドバイザー」の知見、そして現在も学び続けている「認知行動心理学」の科学的アプローチを掛け合わせ、細胞レベルからの若々しさと、無理のない自然な習慣化をトータルでサポートいたします。</p>
+                        <p>「運動経験がなくて不安…」「三日坊主にならないかしら…」という方もご安心ください。私があなたの一番の理解者として、優しく寄り添います。ぜひ一度、あなたの理想の未来やお悩みをお聞かせください。二人三脚で、新しい日常への一歩を踏み出しましょう！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 md:py-32 bg-gym-beige relative overflow-hidden">
+        <!-- Floating shapes -->
+        <div class="absolute -top-10 -right-10 w-96 h-96 bg-gym-gold opacity-5 rounded-full"></div>
+        <div class="absolute -bottom-10 -left-10 w-96 h-96 bg-gym-navy opacity-5 rounded-full"></div>
+
+        <div class="max-w-max mx-auto px-6 md:px-12 relative z-10">
+            <div class="text-center mb-24" data-aos="fade-up">
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Pricing Plans</span>
+                <h2 class="font-serif text-4xl md:text-6xl text-gym-navy font-bold">料金プラン</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 md:gap-14 max-w-6xl mx-auto items-center">
+                <!-- Standard Plan -->
+                <div class="glass-card p-10 md:p-14 rounded-3xl shadow-xl transition-all duration-500 hover:shadow-2xl h-full flex flex-col justify-between bg-white" data-aos="fade-right" data-aos-delay="100">
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-2">スタンダード・ウェルネス</h3>
+                        <p class="text-gym-muted text-sm mb-8 tracking-widest uppercase font-bold">Standard Wellness</p>
+                        <div class="flex items-baseline mb-12">
+                            <span class="text-5xl md:text-6xl font-serif font-bold">¥70,000</span>
+                            <span class="text-gym-muted ml-2 font-bold">/月 (税込)</span>
+                        </div>
+                        <ul class="space-y-6 mb-16 text-gym-navy font-medium">
+                            <li class="flex items-center"><i data-lucide="check" class="text-gym-green mr-4 w-6 h-6 flex-shrink-0"></i> <span>パーソナルトレーニング (月4回)</span></li>
+                            <li class="flex items-center"><i data-lucide="check" class="text-gym-green mr-4 w-6 h-6 flex-shrink-0"></i> <span>睡眠インストラクト</span></li>
+                            <li class="flex items-center"><i data-lucide="check" class="text-gym-green mr-4 w-6 h-6 flex-shrink-0"></i> <span>疲労回復ボディケア</span></li>
+                            <li class="flex items-center"><i data-lucide="check" class="text-gym-green mr-4 w-6 h-6 flex-shrink-0"></i> <span>習慣化インストラクト</span></li>
+                            <li class="flex items-center"><i data-lucide="check" class="text-gym-green mr-4 w-6 h-6 flex-shrink-0"></i> <span>毎月の食事アドバイス</span></li>
+                        </ul>
+                    </div>
+                    <div class="w-full">
+                        <a href="#cta" class="block w-full text-center border-2 border-gym-navy text-gym-navy py-4 md:py-6 rounded-full font-bold tracking-widest hover:bg-gym-navy hover:text-white transition-all duration-300 mb-3">
+                            まずは無料相談を予約する（1分で完了）
+                        </a>
+                        <p class="text-gym-muted text-opacity-60 text-[10px] md:text-xs text-center font-medium mt-1">※無理な勧誘は一切ございません</p>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-gym-navy p-10 md:p-14 rounded-3xl shadow-2xl relative overflow-hidden transition-all duration-500 md:scale-105 border-4 border-gym-gold h-full flex flex-col justify-between" data-aos="fade-left" data-aos-delay="300">
+                    <div class="absolute top-0 right-0 bg-gym-gold text-white px-12 py-3 text-sm font-bold tracking-[0.3em] uppercase transform translate-x-12 translate-y-6 rotate-45 shadow-lg">Recommended</div>
+                    
+                    <div>
+                        <div class="inline-block bg-gym-gold text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">一番人気</div>
+                        <h3 class="font-serif text-3xl text-gym-beige font-bold mb-2">プレミアム・フルサポート</h3>
+                        <p class="text-gym-beige text-opacity-80 text-sm mb-8 tracking-widest uppercase font-bold">Premium Full Support</p>
+                        <div class="flex items-baseline mb-12">
+                            <span class="text-5xl md:text-6xl font-serif font-bold text-white">¥100,000</span>
+                            <span class="text-gym-beige text-opacity-60 ml-2 font-bold">/月 (税込)</span>
+                        </div>
+                        <ul class="space-y-6 mb-16 text-gym-beige font-medium">
+                            <li class="flex items-center"><i data-lucide="check" class="text-gym-gold mr-4 w-6 h-6 flex-shrink-0"></i> <span class="text-white border-b border-gym-gold pb-1 border-opacity-50">スタンダード全内容 (月8回)</span></li>
+                            <li class="flex items-center"><i data-lucide="plus" class="text-gym-gold mr-4 w-6 h-6 flex-shrink-0"></i> <span>専属トレーナーによる「毎日の徹底食事管理」</span></li>
+                            <li class="flex items-center"><i data-lucide="plus" class="text-gym-gold mr-4 w-6 h-6 flex-shrink-0"></i> <span>LINEによる健康相談（24時間優先受付）</span></li>
+                            <li class="flex items-center"><i data-lucide="plus" class="text-gym-gold mr-4 w-6 h-6 flex-shrink-0"></i> <span>厳選サプリメント・プロテインの毎月提供</span></li>
+                        </ul>
+                    </div>
+                    <div class="w-full">
+                        <a href="#cta" class="block w-full text-center bg-gym-gold text-white py-4 md:py-6 rounded-full font-bold tracking-widest shadow-xl hover:bg-white hover:text-gym-navy transition-all duration-300 transform hover:-translate-y-1 mb-3">
+                            まずは無料相談を予約する（1分で完了）
+                        </a>
+                        <p class="text-gym-beige text-opacity-60 text-[10px] md:text-xs text-center font-medium mt-1">※無理な勧誘は一切ございません</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 md:py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Voices</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-gym-navy font-bold leading-snug">お客様の喜びの声</h2>
+                <div class="w-24 h-[1px] bg-gym-gold mx-auto mt-8 mb-8"></div>
+                <p class="text-gym-muted text-lg">Aeterne Gymで、新しい日常と健康を手に入れた皆様の声をご紹介します。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gym-beige rounded-2xl p-8 shadow-lg relative transform transition duration-500 hover:-translate-y-2 flex flex-col h-full" data-aos="fade-up" data-aos-delay="0">
+                    <i data-lucide="quote" class="w-12 h-12 text-gym-gold opacity-10 absolute top-6 right-6"></i>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gym-navy font-serif font-bold text-xl shadow-md border-2 border-gym-gold flex-shrink-0">K様</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gym-navy">60代女性</h4>
+                            <div class="flex text-gym-gold text-sm mt-1"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
+                        </div>
+                    </div>
+                    <div class="w-full aspect-[4/3] bg-gray-200 rounded-xl mb-6 overflow-hidden relative group border-2 border-white shadow-sm flex-shrink-0">
+                        <img src="assets/testimonial_1.png" alt="お客様の手書きアンケート" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <h3 class="text-gym-navy font-bold text-lg mb-4 leading-snug">「階段の上り下りが楽になり、諦めていた旅行が楽しくなりました」</h3>
+                    <p class="text-gym-muted leading-relaxed text-base md:text-sm flex-grow">以前は膝に不安があり出かけるのが億劫でしたが、無理のないトレーニングと念入りなボディケアのおかげで、今は驚くほど足取りが軽くなりました。先日は久しぶりに友人と温泉旅行に行き、心から楽しむことができました。</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gym-beige rounded-2xl p-8 shadow-lg relative transform transition duration-500 hover:-translate-y-2 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="quote" class="w-12 h-12 text-gym-gold opacity-10 absolute top-6 right-6"></i>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gym-navy font-serif font-bold text-xl shadow-md border-2 border-gym-gold flex-shrink-0">S様</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gym-navy">65歳女性</h4>
+                            <div class="flex text-gym-gold text-sm mt-1"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
+                        </div>
+                    </div>
+                    <div class="w-full aspect-[4/3] bg-gray-200 rounded-xl mb-6 overflow-hidden relative group border-2 border-white shadow-sm flex-shrink-0">
+                        <img src="assets/testimonial_2.png" alt="トレーニング風景" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <h3 class="text-gym-navy font-bold text-lg mb-4 leading-snug">「激しい運動はないのに、毎日ぐっすり眠れて朝の目覚めが変わりました」</h3>
+                    <p class="text-gym-muted leading-relaxed text-base md:text-sm flex-grow">汗をかくような厳しい運動はないのに、レッスンの日は体がポカポカして夜は本当に深く眠れます。サポーターの方が私の睡眠の悩みを親身に聞いてくださり、生活習慣からアドバイスをくれたのが大きかったです。</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-gym-beige rounded-2xl p-8 shadow-lg relative transform transition duration-500 hover:-translate-y-2 flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
+                    <i data-lucide="quote" class="w-12 h-12 text-gym-gold opacity-10 absolute top-6 right-6"></i>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gym-navy font-serif font-bold text-xl shadow-md border-2 border-gym-gold flex-shrink-0">T様</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gym-navy">50代後半女性</h4>
+                            <div class="flex text-gym-gold text-sm mt-1"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
+                        </div>
+                    </div>
+                    <div class="w-full aspect-[4/3] bg-gray-200 rounded-xl mb-6 overflow-hidden relative group border-2 border-white shadow-sm flex-shrink-0">
+                        <img src="assets/testimonial_3.png" alt="お客様からのメッセージ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <h3 class="text-gym-navy font-bold text-lg mb-4 leading-snug">「ジム通いが一度も続いたことのない私が、もう半年通っています」</h3>
+                    <p class="text-gym-muted leading-relaxed text-base md:text-sm flex-grow">今まで何度もダイエットやジムに挑戦しては挫折してきましたが、ここは全く別物です。「今日も癒やされに行こう」という感覚で通えるので、気づけば半年。姿勢も良くなり、お洒落をするのがまた楽しくなりました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow Section -->
+    <section id="flow" class="py-24 md:py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Flow</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-gym-navy font-bold leading-snug">無料相談・体験の流れ</h2>
+                <div class="w-24 h-[1px] bg-gym-gold mx-auto mt-8 mb-8"></div>
+                <p class="text-gym-navy text-lg font-bold">無理な勧誘は一切ございません。安心してお申し込みください。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 md:gap-12 relative">
+                <!-- Desktop Connector Line -->
+                <div class="hidden md:block absolute top-16 left-0 w-full h-1 bg-gym-gold opacity-20 z-0"></div>
+                
+                <!-- Step 1 -->
+                <div class="bg-gym-beige rounded-2xl p-8 text-center relative z-10 shadow-lg" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md border-4 border-gym-gold">
+                        <i data-lucide="smartphone" class="w-8 h-8 text-gym-navy"></i>
+                    </div>
+                    <span class="text-gym-gold font-serif font-bold text-xl mb-2 block italic">Step 01</span>
+                    <h3 class="text-gym-navy font-bold text-lg mb-4">LINEまたはWEBからご予約</h3>
+                    <p class="text-gym-muted text-base md:text-sm leading-relaxed">まずはご希望の日時をお選びいただき、簡単にご予約。お電話でのご予約も承っております。</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-gym-beige rounded-2xl p-8 text-center relative z-10 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md border-4 border-gym-gold">
+                        <i data-lucide="clipboard-list" class="w-8 h-8 text-gym-navy"></i>
+                    </div>
+                    <span class="text-gym-gold font-serif font-bold text-xl mb-2 block italic">Step 02</span>
+                    <h3 class="text-gym-navy font-bold text-lg mb-4">丁寧なヒアリングと体質チェック</h3>
+                    <p class="text-gym-muted text-base md:text-sm leading-relaxed">これまでの運動経験や、現在のお身体の不調をじっくりお伺いし、最適なアプローチを導き出します。</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-gym-navy rounded-2xl p-8 text-center relative z-10 shadow-xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 bg-gym-gold rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-white">
+                        <i data-lucide="heart-pulse" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <span class="text-gym-beige font-serif font-bold text-xl mb-2 block italic">Step 03</span>
+                    <h3 class="text-white font-bold text-lg mb-4">ケア＆軽めのトレーニング体験</h3>
+                    <p class="text-gym-beige text-opacity-80 text-base md:text-sm leading-relaxed">極上の疲労回復ボディケアと、息が上がらない心地よいトレーニングを実際にご体感ください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 md:py-32 bg-gym-beige relative">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">FAQ</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-gym-navy font-bold leading-snug">よくあるご質問</h2>
+                <div class="w-24 h-[1px] bg-gym-gold mx-auto mt-8 mb-8"></div>
+            </div>
+
+            <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                <!-- FAQ Item 1 -->
+                <details class="group bg-white rounded-xl shadow-sm border border-transparent open:border-gym-gold transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gym-navy text-base md:text-lg hover:text-gym-gold transition-colors">
+                        <span>運動経験が全くないのですが、大丈夫ですか？</span>
+                        <span class="transition group-open:rotate-180">
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gym-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gym-muted mt-2 leading-relaxed px-6 pb-6 text-base md:text-base border-t border-gray-100 pt-4">
+                        ご安心ください。当ジムにいらっしゃるお客様の8割以上が、運動経験のない方や長年運動から遠ざかっていた方々です。お客様の体力やその日のご体調に合わせて、無理のない心地よいメニューをご提案いたしますので、どうぞリラックスしてお越しください。
+                    </div>
+                </details>
+                <!-- FAQ Item 2 -->
+                <details class="group bg-white rounded-xl shadow-sm border border-transparent open:border-gym-gold transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gym-navy text-base md:text-lg hover:text-gym-gold transition-colors">
+                        <span>膝や腰に少し痛みがあるのですが、通えますか？</span>
+                        <span class="transition group-open:rotate-180">
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gym-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gym-muted mt-2 leading-relaxed px-6 pb-6 text-base md:text-base border-t border-gray-100 pt-4">
+                        はい、問題ございません。カウンセリング時に痛みの箇所や状態を詳しくお伺いし、患部に負担をかけずに全身のバランスを整えるアプローチを行います。また、疲労回復を促すボディケアで痛みの軽減のサポートもさせていただきます。（※強い痛みがある場合は、事前にかかりつけ医にご相談ください）
+                    </div>
+                </details>
+                <!-- FAQ Item 3 -->
+                <details class="group bg-white rounded-xl shadow-sm border border-transparent open:border-gym-gold transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gym-navy text-base md:text-lg hover:text-gym-gold transition-colors">
+                        <span>厳しい食事制限はありますか？</span>
+                        <span class="transition group-open:rotate-180">
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gym-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gym-muted mt-2 leading-relaxed px-6 pb-6 text-base md:text-base border-t border-gray-100 pt-4">
+                        糖質を完全に抜くような、一時的で苦痛を伴う厳しい食事制限は一切行っておりません。ウェルネスサポーターが、お客様のライフスタイルや好みを尊重しながら、美味しく食べて健康になれる「一生続けられる食事の習慣化」を優しくアドバイスいたします。
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Information Section -->
+    <section id="access" class="py-24 md:py-32 bg-white relative border-t border-gym-beige border-opacity-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gym-gold text-sm tracking-[0.5em] uppercase font-bold mb-4 block">Access</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-gym-navy font-bold leading-snug">店舗案内</h2>
+                <div class="w-24 h-[1px] bg-gym-gold mx-auto mt-8 mb-8"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div data-aos="fade-right">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-gym-gold mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-gym-navy text-lg mb-1">所在地</h4>
+                                <p class="text-gym-muted leading-relaxed">〒107-0062<br>東京都港区南青山3丁目1-X<br>Aeterne Building 2F</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-lucide="clock" class="w-6 h-6 text-gym-gold mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-gym-navy text-lg mb-1">営業時間</h4>
+                                <p class="text-gym-muted leading-relaxed">9:00 〜 21:00<br>(定休日：毎週月曜・年末年始)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-lucide="train" class="w-6 h-6 text-gym-gold mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-gym-navy text-lg mb-1">最寄り駅からのアクセス</h4>
+                                <p class="text-gym-muted leading-relaxed">東京メトロ「表参道駅」A4出口より徒歩3分</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-lucide="car" class="w-6 h-6 text-gym-gold mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-gym-navy text-lg mb-1">駐車場</h4>
+                                <p class="text-gym-muted leading-relaxed">専用駐車場2台完備<br><span class="text-sm md:text-xs">※ご予約時にお申し付けください。</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full h-80 md:h-[400px] bg-gray-200 rounded-3xl overflow-hidden shadow-xl border-4 border-white relative flex items-center justify-center group cursor-pointer" data-aos="fade-left">
+                    <div class="absolute inset-0 bg-gray-300"></div>
+                    <!-- Placeholder text for Google Maps -->
+                    <div class="relative z-10 flex flex-col items-center text-gym-navy opacity-60 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="map" class="w-12 h-12 mb-3"></i>
+                        <span class="font-bold tracking-widest uppercase text-sm">Google Map Area</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section id="cta" class="py-32 bg-white text-gym-navy">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-serif text-3xl md:text-5xl mb-12 leading-relaxed tracking-tight">
+                あなたのペースで構いません。<br>
+                まずは一度、お話を聞かせてください。
+            </h2>
+            <p class="text-gym-muted text-lg mb-16 max-w-2xl mx-auto leading-relaxed">
+                最高の人生は、健康な体から始まります。私たちが、あなたの「変わる楽しみ」を全力でサポートいたします。
+            </p>
+            <div class="flex flex-col items-center justify-center max-w-xl mx-auto">
+                <a href="#cta" class="w-full md:w-auto bg-gym-navy text-white px-8 md:px-12 py-4 md:py-6 rounded-full shadow-xl hover:bg-gym-gold transition-all duration-500 flex flex-col items-center justify-center space-y-1 group transform hover:scale-105 mb-4">
+                    <div class="flex items-center space-x-2 font-bold text-base md:text-xl">
+                        <i data-lucide="calendar" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
+                        <span>まずは無料相談を予約する</span>
+                    </div>
+                    <span class="text-sm md:text-sm font-normal opacity-90">（1分で完了）</span>
+                </a>
+                <p class="text-gym-muted text-opacity-60 text-[10px] md:text-xs text-center font-medium mt-1">※無理な勧誘は一切ございません</p>
+            </div>
+            
+            <div class="mt-32 pt-16 border-t border-gym-beige text-gym-muted text-xs tracking-widest uppercase relative z-10">
+                &copy; 2026 AETERNE GYM - Wellness for Life.
+            </div>
+        </div>
+    </section>
+
+    <!-- LINE FAB (Floating Action Button) -->
+    <a href="https://lin.ee/example" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-50 bg-[#06C755] text-white p-4 md:p-5 rounded-full shadow-2xl hover:scale-110 hover:shadow-xl transition-all duration-300 group flex items-center justify-center animate-bounce duration-[3000ms]" aria-label="LINEで気軽に相談">
+        <i data-lucide="message-circle" class="w-8 h-8 md:w-10 md:h-10"></i>
+        <span class="absolute right-full mr-4 bg-white text-[#06C755] text-sm font-bold py-2 px-4 rounded-xl shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none before:content-[''] before:absolute before:top-1/2 before:left-full before:-translate-y-1/2 before:border-8 before:border-transparent before:border-l-white">
+            LINEで気軽に無料相談
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init AOS animations
+        AOS.init({
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic',
+        });
+
+        // Lucide icons init
+        lucide.createIcons();
+
+        // Sticky Navbar with styling change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            const navLinks = document.getElementById('nav-links');
+            const navLogo = document.getElementById('nav-logo');
+            
+            if (window.scrollY > 50) {
+                // Scrolled state: White background, navy text
+                nav.classList.add('bg-white', 'bg-opacity-95', 'backdrop-blur-md', 'shadow-md', 'text-gym-navy');
+                nav.classList.remove('text-white', 'py-6');
+                nav.classList.add('py-4');
+                navLogo.classList.remove('text-white');
+                navLogo.classList.add('text-gym-navy');
+                
+                Array.from(navLinks.querySelectorAll('a:not(.bg-gym-gold)')).forEach(a => {
+                    a.classList.remove('text-white');
+                    a.classList.add('text-gym-navy');
+                });
+            } else {
+                // Top state: Transparent background, white text
+                nav.classList.remove('bg-white', 'bg-opacity-95', 'backdrop-blur-md', 'shadow-md', 'text-gym-navy');
+                nav.classList.add('text-white', 'py-6');
+                nav.classList.remove('py-4');
+                navLogo.classList.add('text-white');
+                navLogo.classList.remove('text-gym-navy');
+                
+                Array.from(navLinks.querySelectorAll('a:not(.bg-gym-gold)')).forEach(a => {
+                    a.classList.add('text-white');
+                    a.classList.remove('text-gym-navy');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
