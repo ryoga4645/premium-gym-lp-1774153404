@@ -1,2 +1,27 @@
 Initializing Git...
 Initialized empty Git repository in /Users/tarou/management/gym_website/.git/
+[main (root-commit) f10c622] Deploy for preview
+ 15 files changed, 777 insertions(+)
+ create mode 100644 assets/care.png
+ create mode 100644 assets/consulting.png
+ create mode 100644 assets/hero.png
+ create mode 100644 assets/hero_v2.png
+ create mode 100644 assets/senior.png
+ create mode 100644 assets/sleep.png
+ create mode 100644 assets/supporter.png
+ create mode 100644 assets/testimonial_1.png
+ create mode 100644 assets/testimonial_2.png
+ create mode 100644 assets/testimonial_3.png
+ create mode 100644 assets/trainer.png
+ create mode 100755 deploy.sh
+ create mode 100644 deploy_status.txt
+ create mode 100644 index.html
+ create mode 100644 lt.log
+Checking gh auth...
+Creating repository: premium-gym-lp-1774153404 for user ryoga4645...
+https://github.com/ryoga4645/premium-gym-lp-1774153404
+To https://github.com/ryoga4645/premium-gym-lp-1774153404.git
+ * [new branch]      HEAD -> main
+branch 'main' set up to track 'origin/main'.
+Enabling pages...
+{"url":"https://api.github.com/repos/ryoga4645/premium-gym-lp-1774153404/pages","status":null,"cname":null,"custom_404":false,"html_url":"https://ryoga4645.github.io/premium-gym-lp-1774153404/","build_type":"legacy","source":{"branch":"main","path":"/"},"public":true,"protected_domain_state":null,"pending_domain_unverified_at":null,"https_enforced":true}SUCCESS: https://ryoga4645.github.io/premium-gym-lp-1774153404/
