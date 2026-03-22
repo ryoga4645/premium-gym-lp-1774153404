@@ -100,19 +100,27 @@
                     大人世代のための「続く」パーソナルジム。<br>
                     無理なく、優雅に、一生モノの習慣を。
                 </p>
-                <div class="flex flex-col items-start w-full md:w-auto">
-                    <p class="text-white font-medium text-sm md:text-base mb-3 drop-shadow-md">ご予約・お問い合わせは、お好きな方法をお選びください</p>
-                    <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4 mb-3">
-                        <a href="#cta" class="inline-flex w-full md:w-auto bg-gym-gold text-white px-6 md:px-8 py-4 md:py-5 rounded-full text-base md:text-lg font-bold shadow-2xl hover:bg-gym-navy transition-all duration-500 hover:scale-105 active:scale-95 flex-col items-center justify-center">
-                            <span>WEBで無料相談を予約</span>
-                            <span class="text-xs md:text-sm font-normal mt-0.5">（1分で完了）</span>
-                        </a>
-                        <a href="#line" class="inline-flex w-full md:w-auto bg-[#06C755] text-white px-6 md:px-8 py-4 md:py-5 rounded-full text-base md:text-lg font-bold shadow-2xl hover:bg-[#05b34c] transition-all duration-500 hover:scale-105 active:scale-95 flex-row items-center justify-center">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
-                            <span>LINEで気軽に相談・質問</span>
-                        </a>
+                <div class="flex flex-col items-center md:items-start w-full md:w-auto mt-4">
+                    <p class="text-white font-medium text-sm md:text-base mb-4 drop-shadow-md border-l-2 border-gym-gold pl-3">ご希望のアプローチに合わせて、お好きな方法をお選びください</p>
+                    <div class="flex flex-col md:flex-row w-full gap-5 md:gap-4 mb-3">
+                        <!-- WEB Button -->
+                        <div class="flex flex-col items-center md:items-start w-full md:w-1/2">
+                            <a href="#cta" class="inline-flex w-full bg-gym-gold text-white px-4 py-4 rounded-full text-[14px] md:text-[15px] font-bold shadow-2xl hover:bg-gym-navy transition-all duration-500 hover:scale-105 active:scale-95 flex-col items-center justify-center mb-2 text-center border-2 border-gym-gold">
+                                <span>WEBで無料相談・<br class="md:hidden">体験を予約する</span>
+                            </a>
+                            <p class="text-white text-opacity-90 text-[10px] text-center md:text-left drop-shadow-md font-medium px-2">※無理な勧誘は一切ございません。<br class="md:hidden">まずは気軽にお話ししましょう。</p>
+                        </div>
+                        <!-- LINE Button -->
+                        <div class="flex flex-col items-center w-full md:w-1/2 relative mt-4 md:mt-0">
+                            <!-- Floating Badge for LINE -->
+                            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-full animate-bounce whitespace-nowrap shadow-lg z-10 hidden md:block">限定モニター案内中！</div>
+                            <a href="#line" class="inline-flex w-full bg-white text-[#06C755] border-2 border-[#06C755] px-3 py-3 md:py-4 rounded-full text-[12px] md:text-[13px] leading-snug font-bold shadow-2xl hover:bg-[#06C755] hover:text-white transition-all duration-500 hover:scale-105 active:scale-95 flex-row items-center justify-center mb-2 relative group text-center">
+                                <svg viewBox="0 0 24 24" class="w-6 h-6 mr-1.5 flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
+                                <span>【無料】一生モノの健康習慣が身につく<br>『7日間LINE講座』を受け取る</span>
+                            </a>
+                            <p class="text-gym-gold text-[10px] drop-shadow-md font-bold px-2 text-center bg-white bg-opacity-90 rounded inline-block">※登録者限定で、お得な【特別モニター】の先行案内も行っております。</p>
+                        </div>
                     </div>
-                    <p class="text-white text-opacity-60 text-[10px] md:text-xs drop-shadow-md pl-4 border-l-2 border-gym-gold font-medium tracking-wider">※無理な勧誘は一切ございません</p>
                 </div>
             </div>
         </div>
@@ -413,18 +421,22 @@
                             <li class="flex items-center"><i data-lucide="check" class="text-gym-green mr-4 w-6 h-6 flex-shrink-0"></i> <span>毎月の食事アドバイス</span></li>
                         </ul>
                     </div>
-                    <div class="w-full">
-                        <p class="text-gym-navy font-bold text-sm mb-3 text-center">ご予約・お問い合わせはお好きな方法で</p>
-                        <div class="flex flex-col gap-3 mb-3">
-                            <a href="#cta" class="block w-full text-center border-2 border-gym-gold text-gym-gold hover:bg-gym-gold hover:text-white py-4 rounded-full font-bold transition-all duration-300">
-                                WEBで無料相談を予約
+                    <div class="w-full mt-4">
+                        <p class="text-gym-navy font-bold text-sm mb-4 text-center border-b-2 border-gray-100 pb-2">ご希望のアプローチに合わせて、お好きな方法をお選びください</p>
+                        <div class="flex flex-col gap-2 mb-6">
+                            <a href="#cta" class="block w-full text-center bg-gym-gold text-white py-3 md:py-4 rounded-full text-[14px] md:text-base font-bold shadow-md hover:bg-gym-navy transition-all duration-300">
+                                WEBで無料相談・体験を予約する
                             </a>
-                            <a href="#line" class="flex flex-row items-center justify-center w-full text-center bg-[#06C755] text-white py-4 rounded-full font-bold hover:bg-[#05b34c] transition-all duration-300">
-                                <svg viewBox="0 0 24 24" class="w-5 h-5 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
-                                LINEで気軽に相談・質問
-                            </a>
+                            <p class="text-gym-muted text-[10px] text-center font-medium">※無理な勧誘は一切ございません。まずは気軽にお話ししましょう。</p>
                         </div>
-                        <p class="text-gym-muted text-opacity-60 text-[10px] md:text-xs text-center font-medium mt-1">※無理な勧誘は一切ございません</p>
+                        <div class="flex flex-col gap-2 relative">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-full animate-bounce whitespace-nowrap shadow-sm z-10 border border-white">特別モニター案内中！</div>
+                            <a href="#line" class="flex flex-row items-center justify-center w-full text-center bg-white border-2 border-[#06C755] text-[#06C755] py-3 min-h-[64px] rounded-full text-[12px] leading-tight font-bold hover:bg-[#06C755] hover:text-white transition-all duration-300 relative group">
+                                <svg viewBox="0 0 24 24" class="w-5 h-5 mr-1.5 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
+                                <span class="text-left">【無料】一生モノの健康習慣が身につく<br>『7日間LINE講座』を受け取る</span>
+                            </a>
+                            <p class="text-[#06C755] font-bold text-[10px] text-center leading-snug">※登録者限定で、お得な【特別モニター】の<br class="hidden md:block">先行案内も行っております。</p>
+                        </div>
                     </div>
                 </div>
 
@@ -447,18 +459,22 @@
                             <li class="flex items-center"><i data-lucide="plus" class="text-gym-gold mr-4 w-6 h-6 flex-shrink-0"></i> <span>厳選サプリメント・プロテインの毎月提供</span></li>
                         </ul>
                     </div>
-                    <div class="w-full">
-                        <p class="text-gym-beige font-bold text-sm mb-3 text-center">ご予約・お問い合わせはお好きな方法で</p>
-                        <div class="flex flex-col gap-3 mb-3">
-                            <a href="#cta" class="block w-full text-center bg-gym-gold text-white py-4 rounded-full font-bold shadow-xl hover:bg-white hover:text-gym-navy transition-all duration-300 transform hover:-translate-y-1">
-                                WEBで無料相談を予約
+                    <div class="w-full mt-4">
+                        <p class="text-gym-beige font-bold text-sm mb-4 text-center border-b border-gym-gold border-opacity-30 pb-2">ご希望のアプローチに合わせて、お好きな方法をお選びください</p>
+                        <div class="flex flex-col gap-2 mb-6">
+                            <a href="#cta" class="block w-full text-center bg-gym-gold text-white py-3 md:py-4 rounded-full text-[14px] md:text-base font-bold shadow-xl hover:bg-white hover:text-gym-navy transition-all duration-300 transform hover:-translate-y-1">
+                                WEBで無料相談・体験を予約する
                             </a>
-                            <a href="#line" class="flex flex-row items-center justify-center w-full text-center bg-[#06C755] text-white py-4 rounded-full font-bold shadow-xl hover:bg-[#05b34c] transition-all duration-300 transform hover:-translate-y-1">
-                                <svg viewBox="0 0 24 24" class="w-5 h-5 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
-                                LINEで気軽に相談・質問
-                            </a>
+                            <p class="text-gym-beige text-opacity-80 text-[10px] text-center font-medium">※無理な勧誘は一切ございません。まずは気軽にお話ししましょう。</p>
                         </div>
-                        <p class="text-gym-beige text-opacity-60 text-[10px] md:text-xs text-center font-medium mt-1">※無理な勧誘は一切ございません</p>
+                        <div class="flex flex-col gap-2 relative">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-full animate-bounce whitespace-nowrap shadow-sm z-10 border border-gym-navy">特別モニター案内中！</div>
+                            <a href="#line" class="flex flex-row items-center justify-center w-full text-center bg-white text-[#06C755] border-2 border-[#06C755] py-3 min-h-[64px] rounded-full text-[12px] leading-tight font-bold shadow-xl hover:bg-[#06C755] hover:text-white transition-all duration-300 transform hover:-translate-y-1 group">
+                                <svg viewBox="0 0 24 24" class="w-5 h-5 mr-1.5 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
+                                <span class="text-left">【無料】一生モノの健康習慣が身につく<br>『7日間LINE講座』を受け取る</span>
+                            </a>
+                            <p class="text-gym-gold font-bold text-[10px] text-center leading-snug">※登録者限定で、お得な【特別モニター】の<br class="hidden md:block">先行案内も行っております。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -690,22 +706,29 @@
             <p class="text-gym-muted text-lg mb-16 max-w-2xl mx-auto leading-relaxed">
                 最高の人生は、健康な体から始まります。私たちが、あなたの「変わる楽しみ」を全力でサポートいたします。
             </p>
-            <div class="flex flex-col items-center justify-center max-w-2xl mx-auto w-full">
-                <p class="text-gym-navy font-bold text-base md:text-lg mb-4 text-center">ご予約・お問い合わせは、お好きな方法をお選びください</p>
-                <div class="flex flex-col md:flex-row w-full gap-4 mb-4 justify-center">
-                    <a href="#cta" class="w-full md:w-auto bg-gym-navy text-white px-8 py-5 rounded-full shadow-xl hover:bg-gym-gold transition-all duration-500 flex flex-col items-center justify-center group transform hover:scale-105">
-                        <div class="flex items-center space-x-2 font-bold text-base md:text-lg mb-1">
-                            <i data-lucide="calendar" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
-                            <span>WEBで無料相談を予約</span>
-                        </div>
-                        <span class="text-xs font-normal opacity-90">（1分で完了）</span>
-                    </a>
-                    <a href="#line" class="w-full md:w-auto bg-[#06C755] text-white px-8 py-5 rounded-full shadow-xl hover:bg-[#05b34c] transition-all duration-500 flex flex-row items-center justify-center group transform hover:scale-105">
-                        <svg viewBox="0 0 24 24" class="w-7 h-7 mr-2 fill-current group-hover:rotate-12 transition-transform" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
-                        <span class="font-bold text-base md:text-lg">LINEで気軽に相談・質問</span>
-                    </a>
+            <div class="flex flex-col items-center justify-center max-w-3xl mx-auto w-full">
+                <p class="text-gym-navy font-bold text-base md:text-lg mb-6 text-center border-b-2 border-gym-gold pb-3 px-8">ご希望のアプローチに合わせて、お好きな方法をお選びください</p>
+                <div class="flex flex-col md:flex-row w-full gap-6 md:gap-8 mb-4 justify-center items-start">
+                    <!-- WEB -->
+                    <div class="flex flex-col items-center w-full md:w-1/2">
+                        <a href="#cta" class="w-full bg-gym-navy text-white px-6 py-4 md:py-5 rounded-full shadow-xl hover:bg-gym-gold transition-all duration-500 flex flex-col items-center justify-center group transform hover:scale-105 mb-2">
+                            <div class="flex items-center space-x-2 font-bold text-base md:text-[16px] mb-1">
+                                <i data-lucide="calendar" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
+                                <span>WEBで無料相談・体験を予約する</span>
+                            </div>
+                        </a>
+                        <p class="text-gym-muted text-[10px] md:text-xs text-center font-medium">※無理な勧誘は一切ございません。<br class="md:hidden">まずは気軽にお話ししましょう。</p>
+                    </div>
+                    <!-- LINE -->
+                    <div class="flex flex-col items-center w-full md:w-1/2 relative mt-4 md:mt-0">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-full animate-bounce whitespace-nowrap shadow-lg z-10 border-2 border-white">特別モニター案内中！</div>
+                        <a href="#line" class="w-full bg-white text-[#06C755] border-2 border-[#06C755] px-4 py-3 md:py-4 min-h-[70px] rounded-full shadow-xl hover:bg-[#06C755] hover:text-white transition-all duration-500 flex flex-row items-center justify-center group transform hover:scale-105 mb-2">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 mr-2 flex-shrink-0 fill-current group-hover:rotate-12 transition-transform" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.114.281.072.717.035.993-.035.276-.239 1.432-.288 1.705-.058.337.28.531.579.356.323-.191 1.748-1.028 3.092-1.928 1.15-.77 2.158-1.63 2.956-2.529C21.642 16.327 24 13.567 24 10.304z"/></svg>
+                            <span class="font-bold text-[12px] md:text-[13px] leading-tight text-left">【無料】一生モノの健康習慣が身につく<br>『7日間LINE講座』を受け取る</span>
+                        </a>
+                        <p class="text-[#06C755] font-bold text-[10px] md:text-xs text-center leading-snug">※登録者限定で、お得な【特別モニター】の<br class="hidden md:block">先行案内も行っております。</p>
+                    </div>
                 </div>
-                <p class="text-gym-muted text-opacity-60 text-[10px] md:text-xs text-center font-medium">※無理な勧誘は一切ございません</p>
             </div>
             
             <div class="mt-32 pt-16 border-t border-gym-beige text-gym-muted text-xs tracking-widest uppercase relative z-10">
@@ -715,12 +738,20 @@
     </section>
 
     <!-- LINE FAB (Floating Action Button) -->
-    <a href="https://lin.ee/example" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-50 bg-[#06C755] text-white p-4 md:p-5 rounded-full shadow-2xl hover:scale-110 hover:shadow-xl transition-all duration-300 group flex items-center justify-center animate-bounce duration-[3000ms]" aria-label="LINEで気軽に相談">
-        <i data-lucide="message-circle" class="w-8 h-8 md:w-10 md:h-10"></i>
-        <span class="absolute right-full mr-4 bg-white text-[#06C755] text-sm font-bold py-2 px-4 rounded-xl shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none before:content-[''] before:absolute before:top-1/2 before:left-full before:-translate-y-1/2 before:border-8 before:border-transparent before:border-l-white">
-            LINEで気軽に無料相談
-        </span>
-    </a>
+    <div class="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-50 flex items-end">
+        <div class="mr-3 md:mr-4 bg-red-500 text-white text-[10px] md:text-xs font-bold py-2 px-3 md:px-4 rounded-xl shadow-2xl whitespace-nowrap animate-pulse relative hidden sm:flex items-center">
+            7日間無料講座プレゼント！
+            <!-- Arrow -->
+            <div class="absolute top-1/2 -right-1.5 transform -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-red-500"></div>
+        </div>
+        <a href="https://lin.ee/example" target="_blank" rel="noopener noreferrer" class="bg-[#06C755] text-white p-4 md:p-5 rounded-full shadow-2xl hover:scale-110 hover:shadow-xl transition-all duration-300 group flex items-center justify-center relative animate-bounce duration-[3000ms]" aria-label="【無料】7日間LINE講座を受け取る">
+            <span class="absolute -top-1 -right-1 flex h-4 w-4">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-4 w-4 bg-red-500 border-2 border-white"></span>
+            </span>
+            <i data-lucide="message-circle" class="w-8 h-8 md:w-10 md:h-10"></i>
+        </a>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
